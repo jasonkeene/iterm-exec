@@ -3,7 +3,6 @@ given command on multiple different servers in different splits.  You can
 control how many rows of splits it makes.  After the temporary applescript is
 ran it will be deleted.
 
-
 Usage
 =====
 
@@ -22,7 +21,6 @@ If your command has spaces in it you will need to quote it::
 If you want a different amount of rows (defaults to two) then do this::
 
     iterm_exec.py -r 3 server1 server2 server3 server4 whoami
-
 
 Installation
 ============
