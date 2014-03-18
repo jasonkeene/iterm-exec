@@ -8,7 +8,7 @@ import tempfile
 
 DEFAULT_ROWS = 2
 USAGE = "usage: iterm_exec.py [-r rows] <host> [...] <command>"
-APPLE_SCRIPT = """
+APPLE_SCRIPT = r"""
 launch "iTerm"
 
 tell application "iTerm"
@@ -34,8 +34,8 @@ tell application "iTerm"
     end tell
 end tell
 """
-KEYSTROKE = """tell i term application "System Events" to keystroke "{}" {}"""
-SSH_COMMAND = """ssh {} '{}'\n"""
+KEYSTROKE = r"""tell i term application "System Events" to keystroke "{}" {}"""
+SSH_COMMAND = r"""ssh -t {} '{}' '; exec /bin/bash -i'\n"""
 
 
 def keystroke(keys, command=False):
