@@ -28,4 +28,5 @@ Installation
 Copy the iterm_exec.py script somewhere into your PATH::
 
     wget https://raw.github.com/jasonkeene/iterm-exec/master/iterm_exec.py
+    chmod +x iterm_exec.py
     mv iterm_exec.py ~/.local/bin/
