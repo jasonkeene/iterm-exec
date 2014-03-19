@@ -43,7 +43,7 @@ def keystroke(keys, command=False):
 
 
 def ssh_command(host, command):
-    return keystroke(SSH_COMMAND.format(host, command))
+    return keystroke(SSH_COMMAND.format(host, command.replace(r'"', r'\"')))
 
 
 @contextlib.contextmanager
