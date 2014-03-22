@@ -35,3 +35,25 @@ Copy the iterm_exec.py script somewhere into your PATH::
     
     # move the script into your PATH, for instance my local path is ~/.local/bin/
     mv iterm_exec.py ~/.local/bin/
+
+Defining SSH Hosts
+==================
+
+You can use the format user@hostname to specifiy a user for the server but
+this format does not allow you to specify a port number or identfile.  To do
+this you must add a Host entry to your SSH conf.
+
+#. Edit ``~/.ssh/config``
+#. Add a Host section like this::
+
+    Host server1
+        User user1
+        IdentityFile ~/.ssh/server1_id_rsa
+        HostName server1.someotherhostname.com
+        Port 9999
+
+Now you can type ``iterm_exec.py server1 whoami`` and it will connect to server
+one with the given user/port/identfile/etc.
+
+If you wish to enable tab completion in bash for your ssh conf hosts check out
+this: https://github.com/jasonkeene/dotfiles/blob/master/.bash_darwin#L37
