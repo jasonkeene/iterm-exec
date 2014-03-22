@@ -25,15 +25,16 @@ If you want a different amount of rows (defaults to two) then do this::
 Installation
 ============
 
-Copy the iterm_exec.py script somewhere into your PATH::
+#. Download the script::
 
-    # download the script
     curl https://raw.github.com/jasonkeene/iterm-exec/master/iterm_exec.py > iterm_exec.py
 
-    # make sure the script is executable
+#. Make sure the script is executable::
+
     chmod +x iterm_exec.py
     
-    # move the script into your PATH, for instance my local path is ~/.local/bin/
+#. Move the script into your PATH, for instance my local path is ~/.local/bin/::
+
     mv iterm_exec.py ~/.local/bin/
 
 Defining SSH Hosts
