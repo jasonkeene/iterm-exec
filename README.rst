@@ -57,4 +57,4 @@ Now you can type ``iterm_exec.py server1 whoami`` and it will connect to server
 one with the given user/port/identfile/etc.
 
 If you wish to enable tab completion in bash for your ssh conf hosts check out
-this: https://github.com/jasonkeene/dotfiles/blob/master/.bash_darwin#L37
+this: https://github.com/jasonkeene/dotfiles/blob/1ab8b4b7bfc7aab31e4f0f989571a1473de5decc/.bash_darwin#L25-L31
